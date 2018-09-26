@@ -12,14 +12,14 @@ import {
  * A plugin for the MaterialDarker theme for JupyterLab
  */
 const plugin: JupyterLabPlugin<void> = {
-  id: 'MaterialDarker:plugin',
+  id: 'MaterialDarkerFixed:plugin',
   requires: [IThemeManager],
   activate: function(app: JupyterLab, manager: IThemeManager) {
     manager.register({
-      name: 'Material Darker',
+      name: 'Material Darker - Fixed',
       // isLight: false,
       load: function() {
-        return manager.loadCSS('@oriolmirosa/jupyterlab_materialdarker/index.css');
+        return manager.loadCSS('@halhenke/jupyterlab_materialdarker/index.css');
       },
       unload: function() {
         return Promise.resolve(void 0);

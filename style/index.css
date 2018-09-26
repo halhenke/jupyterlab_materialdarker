@@ -25,3 +25,10 @@ tt, code, kbd, samp, pre {
     padding: 2px;
     border-radius: 2px;
 }
+
+/* .jp-OutputArea-output pre {
+  background-color: #000;
+}; */
+.jp-RenderedText pre {
+  background-color: #000;
+}
