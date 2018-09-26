@@ -17,9 +17,9 @@ const plugin: JupyterLabPlugin<void> = {
   activate: function(app: JupyterLab, manager: IThemeManager) {
     manager.register({
       name: 'Material Darker - Fixed',
-      // isLight: false,
+      isLight: false,
       load: function() {
-        return manager.loadCSS('@halhenke/jupyterlab_materialdarker/index.css');
+        return manager.loadCSS('@hal9zillion/jupyterlab_materialdarker/index.css');
       },
       unload: function() {
         return Promise.resolve(void 0);
